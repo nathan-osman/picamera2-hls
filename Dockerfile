@@ -4,7 +4,14 @@ WORKDIR /usr/src/app
 
 # Install ffmpeg
 RUN apt-get update && \
-    apt-get install -y ffmpeg-dev && \
+    apt-get install -y \
+        libavformat-dev \
+        libavcodec-dev \
+        libavdevice-dev \
+        libavutil-dev \
+        libavfilter-dev \
+        libswscale-dev \
+        libswresample-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # Install dependencies
