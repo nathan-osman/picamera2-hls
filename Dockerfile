@@ -5,11 +5,13 @@ WORKDIR /usr/src/app
 # Install ffmpeg
 RUN apt-get update && \
     apt-get install -y \
-        libavformat-dev \
+        cmake \
         libavcodec-dev \
         libavdevice-dev \
-        libavutil-dev \
         libavfilter-dev \
+        libavformat-dev \
+        libavutil-dev \
+        libcap-dev \
         libswscale-dev \
         libswresample-dev && \
     rm -rf /var/lib/apt/lists/*
