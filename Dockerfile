@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 # Install ffmpeg
 RUN apt-get update && \
-    apt-get install -y ffmpeg && \
+    apt-get install -y ffmpeg-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # Install dependencies
