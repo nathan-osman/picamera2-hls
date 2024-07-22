@@ -31,15 +31,15 @@ WORKDIR /usr/src/app
 # Install dependencies
 RUN apt-get update && \
     apt-get install -y \
-        libavcodec59 \
-        libavdevice59 \
-        libavfilter8 \
-        libavformat59 \
-        libavutil57 \
+        libavcodec60 \
+        libavdevice60 \
+        libavfilter9 \
+        libavformat60 \
+        libavutil58 \
         libcamera0.0.3 \
         libcap2 \
-        libswscale6 \
         libswresample4 \
+        libswscale7 \
         python-is-python3 \
         python3-pip && \
     rm -rf /var/lib/apt/lists/*
