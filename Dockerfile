@@ -36,7 +36,7 @@ RUN apt-get update && \
         libavfilter9 \
         libavformat60 \
         libavutil58 \
-        libcamera0.0.3 \
+        libcamera0.3 \
         libcap2 \
         libswresample4 \
         libswscale7 \
